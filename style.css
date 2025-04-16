@@ -27,6 +27,13 @@
     top: 85%;
     display: flex;
     color:white;
+    i{
+        font-size: 25px;
+        padding:0 15px ;
+    }
+    >ul li{
+        display:inline;
+        }
 }
 .home-page{
     h1{
@@ -40,8 +47,8 @@
     top:2%;
     left:42%;
     img{
-        width:80%;
-        height:80%;
+        width:65%;
+        height:65%;
     }
 }
 a{
@@ -50,16 +57,43 @@ a{
     font-size: 20px;
     padding: 10px 15px;
 }
-li{
-    display:inline;
+.opening-hr,.dropdown{
+    position:relative;
+    display:inline-block;
 }
-.dropdown-nav{
-    display:none;
-    background-color: black;
-}
+.dropdown-nav,
 .opening-hours{
     display:none;
+    position:absolute;
+    width:250px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.dropdown-nav{
+    background-color: black;
+    top:-1250%;
+    ul{
+        list-style-type: none;
+    }
+    li{
+        border-bottom: grey 1px solid;
+        margin-bottom: 4%;
+    }
+    a:hover{
+        color: grey;
+    }
+}
+.opening-hours{
     background-color: white;
+    color:black;
+    top:-950%;
+    line-height: 1.5;
+}
+.dropdown:hover .dropdown-nav{
+    display:block;
+}
+.opening-hr:hover .opening-hours{
+    display:block;
 }
 .title{
     height:100%;
@@ -149,6 +183,9 @@ li{
 }
 .kilimani{
     background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('Images/Kilimani-Nights.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .menu-text{
     font-family: kugile;
@@ -243,3 +280,93 @@ td:nth-last-child(1){
     color: gray;
 }
 
+/* contact */
+.contact{
+    color:white;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('Images/ankolegrill_Kitisuru\ Night2.webp');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display:flex;
+    gap: 20px;
+    a{
+        padding: 0;
+    }
+    line-height: 1.2;
+    h1{
+        font-size: 38px;
+    }
+}
+.kitisuru-contact,.kilimani-contact{
+    border:rgb(245, 236, 141) solid 3px;
+    padding: 2%;
+    margin-top: 18%;
+    width:25%;
+    a,p{
+        font-size: 25px;
+    }
+}
+.kilimani-contact{
+    height: 45%;
+}
+.kitisuru-contact{
+    height:35%;
+}
+.paragraph{
+    display: inline-flex;
+}
+
+/* reviews */
+.review{
+    background-color: black;
+    color:white;
+    justify-items: center;
+    align-content: center;
+    height: 100vh;
+}
+.kitisuru-review{
+    width:50%;
+    text-align: center;
+    font-size: 20px;
+    display:none;
+    position:relative;
+    a{
+        display: block;
+        font-size: large;
+    }
+    h1{
+        margin: 10%;
+    }
+}
+.fa-solid,h1{
+    font-size: 50px;
+}
+.fa-quote-left, .fa-quote-right{
+    color: #f76c02;
+}
+.fa-quote-left{
+    margin-left: -90%;
+}
+.fa-quote-right{
+    margin-right:-90%;
+}
+.review-text{
+    padding: 3% 10%;
+}
+.review>a
+{
+    position:absolute;
+    top:50%;
+    transition: 0.6s ease;
+    cursor:pointer;
+    font-weight: lighter;
+    color: grey;
+    font-size: 30px;
+}
+.left-arrow{
+    left:20%;
+}
+.right-arrow{
+    right:20%;
+}
