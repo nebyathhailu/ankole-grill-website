@@ -24,7 +24,7 @@
     border-radius: 100px;
     margin: 0 25%;
     position: fixed;
-    top: 85%;
+    top: 90%;
     display: flex;
     color:white;
     i{
@@ -149,7 +149,7 @@ a{
     right:5%;
 }
 .fa-square-whatsapp{
-    bottom:7%;
+    bottom:5%;
     right:5%;
 }
 @keyframes fade{
@@ -375,13 +375,14 @@ td:nth-last-child(1){
 .container{
     display:flex;
     height:100vh;
+    justify-content: space-evenly;
 }
 .event{
     height:100%;
     justify-items:center;
     align-content:center;
-    width:35%;
-    overflow-x: hidden;
+    width:35vw;
+    /* overflow-x: hidden; */
     color:white;
     font-size: 20px;
     p:nth-child(1){
@@ -407,7 +408,7 @@ td:nth-last-child(1){
     background-repeat: no-repeat;
     background-size: cover;
 }
-.addis{
+/* .addis{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Images/addis.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -421,4 +422,138 @@ td:nth-last-child(1){
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Images/private-dining.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+} */
+
+/* Reservation */
+.reservations{
+    display:flex;
+    height:100vh;
+    justify-content:space-evenly;
+    justify-items: center;
+    .logo{
+        left:18%;
+    }
+}
+.reserve{
+    align-content: center;
+    justify-items: center;
+    width: 50%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Images/Tropical-Plants-And-Flowers-paint-by-numbers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    h3{
+        color:white;
+        font-size: 35px;
+    }
+    h1{
+        color:#f18029;
+        font-size: 60px;
+    }
+}
+.form{
+    padding: 5%;
+    background-color: black;
+    width: 50%;
+    a{
+        padding: 0;
+        color: black;
+    }
+}
+input,select{
+   width:100%;
+   padding: 2%;
+   margin:1% 0;
+   background-color: rgb(34, 32, 32);
+   color:white;
+}
+label,#time,#date{
+    color:white;
+}
+#location{
+    color:grey;
+}
+#submit{
+    border-radius: 10px;
+    background-color: bisque;
+    border:none;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 0;
+    width: 100%;
+    padding:3%;
+}
+
+/* live */
+.live{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('Images/live-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display:flex;
+    justify-content: space-evenly;
+    gap:10px;
+    img{
+        width:360px;
+        height:360px;
+    }
+    img:hover{
+        transform: scale(1.1);
+    }
+    p{
+        color:#f76c02;
+    }
+    .logo{
+        left:30%;
+    }
+    
+}
+.tukatika{
+    position: relative;
+    justify-items: center;
+    align-content: center;
+    width:50%;
+    .navigation{
+       margin-left:5px;
+       width: 48%;
+    }
+    >h1{
+        color: #f76c02;
+        font-size: 60px;
+    }
+    >h2{
+        color:white;
+    }
+}
+.live-main{
+    display: flex;
+    align-items: center;
+    margin:2% 0 6% 0;
+    gap:20px;
+}
+.live-artist{
+    margin-left: 5%;
+    h2{
+        color:white;
+    }
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+/* live2 */
+.first-live, .second-live, .third-live{
+    color:white;
+    img{
+        width:100vw;
+        position:relative;
+    }
+    h1{
+        position:absolute;
+        top:45%;
+        left:35%;
+        padding-right: 30%;
+        text-align: center;
+    }
+}
+.live-acoustic .navigation{
+    position:absolute;
 }
