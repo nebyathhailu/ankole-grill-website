@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow-y: hidden;
+}
+.navigation{
+    background-color: black;
+    padding: 1.5%;
+    border-radius: 100px;
+    margin: 0 1%;
+    position: fixed;
+    top: 86%;
+    display: flex;
+    color:white;
+    i{
+        font-size: 25px;
+        padding:0 15px ;
+    }
+    >ul li{
+        display:inline;
+    }
+}
+.home-page{
+    h1{
+        font-size:160px;
+        color:#aaa9a9;
+        font-family:kugile;   
+    }    
+}
+.logo{
+    position: absolute;
+    top:5%;
+    left:35%;
+    img{
+        width:65%;
+        height:65%;
+    }
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+.opening-hr,.dropdown{
+    position:relative;
+    display:inline-block;
+}
+.dropdown-nav,
+.opening-hours{
+    display:none;
+    position:absolute;
+    width:250px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.dropdown-nav{
+    background-color: black;
+    top:-1250%;
+    ul{
+        list-style-type: none;
+    }
+    li{
+        border-bottom: grey 1px solid;
+        margin-bottom: 4%;
+    }
+    a:hover{
+        color: grey;
+    }
+}
+.opening-hours{
+    background-color: white;
+    color:black;
+    top:-950%;
+    line-height: 1.5;
+}
+.dropdown:hover .dropdown-nav{
+    display:block;
+}
+.opening-hr:hover .opening-hours{
+    display:block;
+}
+.fa-brands{
+    font-size: 40px;
+    position:absolute;
+    color:grey;
+}
+.fa-square-instagram{
+    top:7%;
+    right:8%;
+}
+.fa-square-facebook{
+    top:7%;
+    right:5%;
+}
+.fa-square-whatsapp{
+    bottom:7%;
+    right:5%;
+}
+.reservation{
+    background-color: rgba(128, 128, 128);
+    border-radius: 100px;
+    padding: 12px;
+}
+.reservation:hover{
+    background-color: white;
+    color:black;
+}
+.kilimani-main{
+    display:flex;
+    justify-content: space-evenly;
+}
+.kilimani-menu{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('Images/kitisuru.jpg');
+    position: relative;
+    justify-items: center;
+    align-content:center;
+   
+    h2{
+        color:white;
+        font-size: 40px;
+        font-weight: lighter;
+    }
+    h1{
+        color:#f76c02; 
+        font-size: 60px;
+    }
+}
+.kilimani-menu, .menus{
+    width:100%;
+    height: 100vh;
+}
+.menus{
+    background-color: black;
+    overflow-y:scroll;
+    padding:0 2%;
+    a{
+        color:grey;
+        font-weight: bolder;
+    }
+    color:white;
+    h2{
+        color:#f76c02;
+    }
+    h1,h2{
+        padding: 3% 0;
+    }
+    a:hover, a:link:active{
+        color:rgb(249, 219, 144);
+    }
+}   
+
+.menu-nav{
+    padding:1.5% 15%;
+    position:sticky;
+    top:0;
+    left:50%;
+    right:0;
+    background-color: black;
+}
+table{
+    width: 100%;
+    margin: 1% 0 10% 0;
+}
+table img{
+    width:100px;
+}
+.menu-logo{
+    width:20%;
+}
+.menu-content{
+    width:60%;
+}
+.menu-with-logo tr{
+    height: 100px;
+}
+td:nth-last-child(1){
+    text-align: end;
+}
+.menu-with-logo p{
+    color: gray;
+}

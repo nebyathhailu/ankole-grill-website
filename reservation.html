@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservation</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="reservation.css" type="text/css">
     <link rel="icon" href="Images/ankolegrill.jpg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/4ea4f48bde.js" crossorigin="anonymous"></script>
 </head>
@@ -18,10 +18,10 @@
             <img src="Images/logo.svg" alt="Ankole logo">
         </div> 
         <div class="form">
-            <form action="" method="post">
-                <label for="name">Name:</label><br>
+            <form action="" method="">
+                <label for="name">Name</label><br>
                 <input type="text" id="name" placeholder="Enter your first name" required><br>
-                <label for="location">Location:</label><br>
+                <label for="location">Location</label><br>
                 <select name="location" id="location" required>
                     <option value="kitisuru">Kitisuru(open 9am&#183;close 11pm)</option>
                     <option value="kilimani">Kilimani(Hours: Open 7:30am &#183; closes 11pm)</option>
@@ -32,9 +32,9 @@
                 <input type="tel" id="tel" placeholder="eg:0700 000 000" required><br>
                 <label for="guest">Number of Guests</label><br>
                 <input type="number" id="guest" min="1" max="8" placeholder="(maximum of 8 guests only)" required><br>
-                <label for="date">Date:</label><br>
-                <input type="date" id="date" placeholder="mm/dd/yyyy" required><br>
-                <label for="time">Time:</label><br>
+                <label for="date">Date</label><br>
+                <input type="date" id="date" placeholder="mm/dd/yyyy"><br>
+                <label for="time">Time</label><br>
                 <input type="time" id="time" placeholder="--:-- --" required><br>
                 <button type="submit" id="submit"><a href="index.html">Submit</a></button>
             </form>
@@ -67,7 +67,7 @@
                     <p>7.30am-11.00pm</p>
                 </div>
             </div>
-            <ul>
+            <ul class="list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="review.html">Reviews</a></li>

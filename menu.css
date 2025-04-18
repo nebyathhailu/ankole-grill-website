@@ -2,17 +2,10 @@
     margin:0;
     box-sizing: border-box;
 }
-
-@font-face {
-    font-family: kugile;
-    src: url(Fonts/Kugile_Demo.ttf);
+body{
+    height: 100vh;
+    overflow-y: hidden;
 }
-@font-face {
-    font-family:jmh ;
-    src: url(Fonts/JMH\ Typewriter.ttf);
-}
-
-
 .navigation{
     background-color: black;
     padding: 1.5%;
@@ -90,47 +83,6 @@ a{
 .opening-hr:hover .opening-hours{
     display:block;
 }
-.title{
-    height:100%;
-    width:100%;
-    position:absolute;
-    background-size: cover;
-    background-position: center;
-    opacity:0;
-    justify-items: center;
-    align-content:center;
-    animation: fade 25s infinite;
-    transition: opacity 1s ease-in-out;
-}
-.title:nth-child(1){
-    background-image:url('Images/home-image1.jpg');
-    animation-delay: 0s;
-}
-.title:nth-child(2){
-    background-image:url('Images/home-image2.jpg');
-    animation-delay: 5s;
-}
-.title:nth-child(3){
-    background-image:url('Images/home-image3.jpg');
-    animation-delay: 10s;
-}
-.title:nth-child(4){
-    background-image:url('Images/home-image4.jpg');
-    animation-delay: 15s;
-}
-.title:nth-child(5){
-    background-image:url('Images/home-image5.jpg');
-    animation-delay: 20s;
-}
-.reservation{
-    background-color: rgba(128, 128, 128);
-    border-radius: 100px;
-    padding: 12px;
-}
-.reservation:hover{
-    background-color: white;
-    color:black;
-}
 .fa-brands{
     font-size: 35px;
     position:absolute;
@@ -148,12 +100,48 @@ a{
     bottom:7%;
     right:3%;
 }
-@keyframes fade{
-    0%{opacity:0;}
-    5%{opacity:1;}
-    20%{opacity:1;}
-    35%{opacity:0;}
-    100%{opacity:0;}
+.reservation{
+    background-color: rgba(128, 128, 128);
+    border-radius: 100px;
+    padding: 12px;
+}
+.reservation:hover{
+    background-color: white;
+    color:black;
+}
+.menu{
+    display:flex;
+    justify-content:space-evenly;
+    height: 100vh;
+    h1{
+        font-size: 60px;
+    }
+    p{
+        justify-self: center;
+    }
+}
+.kitisuru,
+.kilimani{
+    width:100%;
+    justify-items: center;
+    align-content: center;
+}
+.kitisuru{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('Images/home-image1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.kilimani{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('Images/Kilimani-Nights.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.menu-text{
+    font-family: kugile;
+    font-size: 30px;
+    font-weight: bolder;
+    color:#b34d00;
 }
 
 @media only screen and (max-width:400px){
@@ -179,8 +167,21 @@ a{
         }
 
     }
+    .menu{
+        flex-direction:column;
+        h1{
+            font-size: 40px;
+        }
+    }
+    .kitisuru,.kilimani{
+        height:50vh;
+    }
+
+    .kitisuru{
+        align-content:end;
+    }
    .fa-square-facebook{
-    top:8%;
+    top:7%;
    }
    .fa-square-instagram{
     top:3%;

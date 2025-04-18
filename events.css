@@ -2,17 +2,10 @@
     margin:0;
     box-sizing: border-box;
 }
-
-@font-face {
-    font-family: kugile;
-    src: url(Fonts/Kugile_Demo.ttf);
+body{
+    height: 100vh;
+    overflow-y: hidden;
 }
-@font-face {
-    font-family:jmh ;
-    src: url(Fonts/JMH\ Typewriter.ttf);
-}
-
-
 .navigation{
     background-color: black;
     padding: 1.5%;
@@ -40,7 +33,7 @@
 .logo{
     position: absolute;
     top:5%;
-    left:43%;
+    left:42%;
     img{
         width:65%;
         height:65%;
@@ -90,47 +83,6 @@ a{
 .opening-hr:hover .opening-hours{
     display:block;
 }
-.title{
-    height:100%;
-    width:100%;
-    position:absolute;
-    background-size: cover;
-    background-position: center;
-    opacity:0;
-    justify-items: center;
-    align-content:center;
-    animation: fade 25s infinite;
-    transition: opacity 1s ease-in-out;
-}
-.title:nth-child(1){
-    background-image:url('Images/home-image1.jpg');
-    animation-delay: 0s;
-}
-.title:nth-child(2){
-    background-image:url('Images/home-image2.jpg');
-    animation-delay: 5s;
-}
-.title:nth-child(3){
-    background-image:url('Images/home-image3.jpg');
-    animation-delay: 10s;
-}
-.title:nth-child(4){
-    background-image:url('Images/home-image4.jpg');
-    animation-delay: 15s;
-}
-.title:nth-child(5){
-    background-image:url('Images/home-image5.jpg');
-    animation-delay: 20s;
-}
-.reservation{
-    background-color: rgba(128, 128, 128);
-    border-radius: 100px;
-    padding: 12px;
-}
-.reservation:hover{
-    background-color: white;
-    color:black;
-}
 .fa-brands{
     font-size: 35px;
     position:absolute;
@@ -148,15 +100,55 @@ a{
     bottom:7%;
     right:3%;
 }
-@keyframes fade{
-    0%{opacity:0;}
-    5%{opacity:1;}
-    20%{opacity:1;}
-    35%{opacity:0;}
-    100%{opacity:0;}
+.reservation{
+    background-color: rgba(128, 128, 128);
+    border-radius: 100px;
+    padding: 12px;
+}
+.reservation:hover{
+    background-color: white;
+    color:black;
+}
+.event-container{
+    display:flex;
+    height:100vh;
+    justify-content: space-evenly;
+}
+.event{
+    height:100vh;
+    justify-items:center;
+    align-content:center;
+    width:35vw;
+    color:white;
+    font-size: 20px;
+    p:nth-child(1){
+        color:grey;
+        margin: 5%;
+    }
+    p:nth-child(4),p:nth-child(3){
+        color: #e7b854;
+    }
+}
+.accra{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Images/anokle\ accra\ \(2\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nairobi{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Images/download1.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.zanzibar{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Images/anokle\ zanzibar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media only screen and (max-width:400px){
+    body{
+        overflow-y:scroll;
+    }
     .home-page{
         h1{
             font-size: 60px;
@@ -167,9 +159,6 @@ a{
             display:none;
         }       
     }
-    .logo{
-        left:30%;
-    }
     .navigation{
         width:68%;
         margin:0 17%;
@@ -177,15 +166,33 @@ a{
         i{
             padding: 0 5px;
         }
-
+    }
+    .fa-brands,.logo{
+        left:25%;
+        position: fixed;
+    }
+    .event-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .event{
+        width:100%;
+        height:90vh;
+        padding:15%;
+    }
+    p{
+        text-align: center;
     }
    .fa-square-facebook{
     top:8%;
+    left:88%;
    }
    .fa-square-instagram{
     top:3%;
-    right:3%;
+    left:88%;
    }
    .fa-square-whatsapp{
-    bottom:8%;   }
+    bottom:8%; 
+    left:88%;
+  }
  }
