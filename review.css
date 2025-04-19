@@ -247,11 +247,8 @@ a{
         margin:0 4%;
         padding: 3.5% 0%;
         top:90%;
-    }
-
-    .home-page{
-        h1{
-            font-size:100px;
+        a{
+            padding:10px 5px;
         }
     }
     .logo{
