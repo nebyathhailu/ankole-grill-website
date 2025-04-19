@@ -29,6 +29,9 @@
     >ul li{
         display:inline;
     }
+    >ul li:hover{
+        background-color: #aaa9a9;
+    }
 }
 .home-page{
     h1{
@@ -78,6 +81,9 @@ a{
         color: grey;
     }
 }
+li:nth-last-child(2):hover,li:nth-last-child(3):hover,li:nth-last-child(4):hover,li:nth-last-child(5):hover,li:nth-last-child(6):hover,li:nth-last-child(7):hover{
+    background-color: #aaa9a9;
+} 
 .opening-hours{
     background-color: white;
     color:black;
@@ -156,7 +162,7 @@ a{
     100%{opacity:0;}
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:550px){
     .home-page{
         h1{
             font-size: 60px;
@@ -168,7 +174,7 @@ a{
         }       
     }
     .logo{
-        left:30%;
+        left:25%;
     }
     .navigation{
         width:68%;
@@ -177,6 +183,7 @@ a{
         i{
             padding: 0 5px;
         }
+      
 
     }
    .fa-square-facebook{
@@ -189,3 +196,36 @@ a{
    .fa-square-whatsapp{
     bottom:8%;   }
  }
+
+@media only screen and (min-width:550px) and (max-width:950px){
+    .navigation{
+        width:90%;
+        margin:0 4%;
+        padding: 3.5% 0%;
+        top:90%;
+        a{
+            padding:10px 5px;
+        }
+
+    }
+
+    .home-page{
+        h1{
+            font-size:100px;
+        }
+    }
+    .logo{
+        left:35%;
+     }
+     
+     .fa-square-facebook{
+        top:7%;
+       }
+       .fa-square-instagram{
+        top:4%;
+        right:3%;
+       }
+       .fa-square-whatsapp{
+        bottom:10%;   }
+
+}

@@ -127,12 +127,12 @@ a{
     align-content: center;
 }
 .kitisuru{
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('Images/home-image1.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Images/home-image1.jpg');
     background-repeat: no-repeat;
     background-size: cover;  
 }
 .kilimani{
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('Images/Kilimani-Nights.jpg') ;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Images/Kilimani-Nights.jpg') ;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -141,15 +141,11 @@ a{
     font-family: kugile;
     font-size: 30px;
     font-weight: bolder;
-    color:#b34d00;
+    color:rgb(201,36,36);
 }
 
-@media only screen and (max-width:400px){
-    .home-page{
-        h1{
-            font-size: 60px;
-        }
-    }
+@media only screen and (max-width:550px){
+    
     .list{
         li:nth-last-child(2),li:nth-last-child(3),li:nth-last-child(4),li:nth-last-child(5),li:nth-last-child(6),li:nth-last-child(7){
             display:none;
@@ -175,11 +171,12 @@ a{
     }
     .kitisuru,.kilimani{
         height:50vh;
+        
     }
+.kitisuru{
+    align-content:end;
+}
 
-    .kitisuru{
-        align-content:end;
-    }
    .fa-square-facebook{
     top:7%;
    }
@@ -190,3 +187,43 @@ a{
    .fa-square-whatsapp{
     bottom:8%;   }
  }
+
+ @media only screen and (min-width:550px) and (max-width:950px){
+    .navigation{
+        width:90%;
+        margin:0 4%;
+        padding: 3.5% 0%;
+        top:90%;
+        a{
+            padding:10px 5px;
+        }
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .kitisuru,.kilimani{
+        height:50vh;
+        align-content:end;
+        
+    }
+    .kitisuru{
+        padding-bottom: 5%;
+    }
+    .kilimani{
+        padding-bottom: 20%;
+    }
+    .logo{
+        left:35%;
+     }
+     
+     .fa-square-facebook{
+        top:7%;
+       }
+       .fa-square-instagram{
+        top:4%;
+        right:3%;
+       }
+       .fa-square-whatsapp{
+        bottom:10%;   }
+
+}

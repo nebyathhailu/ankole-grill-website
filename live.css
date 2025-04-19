@@ -143,19 +143,16 @@ a{
     background-color: white;
     color:black;
 }
-@media only screen and (max-width:400px){
-    .home-page{
-        h1{
-            font-size: 60px;
-        }
-    }
+@media only screen and (max-width:550px){
+
     .list{
         li:nth-last-child(2),li:nth-last-child(3),li:nth-last-child(4),li:nth-last-child(5),li:nth-last-child(6),li:nth-last-child(7){
             display:none;
         }       
     }
     .logo{
-        left:30%;
+        left:25%;
+        top:5%;
     }
     .navigation{
         position:fixed;
@@ -166,13 +163,12 @@ a{
             padding: 0 5px;
         }
     }
-   .logo{
-    top:5%;
-   }
+   
     .live-main,.live{
         flex-direction: column;
     }
     .tukatike{
+        padding-top: 50%;
         height:50vh;
         position: static;
         >h1{
@@ -181,7 +177,7 @@ a{
         >h2{
             font-size: 30px;
         }
-        padding-top: 50%;
+        
     }
     .live-main{
         margin:auto;
@@ -207,3 +203,42 @@ a{
     position: fixed;
     bottom:8%;   }
  }
+
+ @media only screen and (min-width:550px) and (max-width:950px){
+    .navigation{
+        position:fixed;
+        width:90%;
+        margin:-5% 5%;
+        padding: 3.5% 0%;
+        top:90%;
+        a{
+            padding:10px 5px;
+        }
+    }
+    .logo{
+        left:35%;
+     }
+    .live{
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+   .live-main{
+    gap:5px;
+    h2{
+        padding-right: 5%;
+    }
+   }
+   .tukatike{
+    height:50vh;
+    position:static;
+    padding-top: 50%;
+   }
+   .live-artist{
+        height:auto;
+        overflow-y: auto;
+        padding-bottom: 30%;
+   }
+    .fa-square-whatsapp{
+    bottom:14%;   }
+
+}
