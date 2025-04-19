@@ -29,8 +29,9 @@
     >ul li{
         display:inline;
     }
-    >ul li:hover{
-        background-color: #aaa9a9;
+    >ul li:not(:last-child):hover{
+        padding: 1em 0;
+        background-color: #4e4d4d;
     }
 }
 .home-page{

@@ -22,6 +22,10 @@ body{
     >ul li{
         display:inline;
     }
+    >ul li:not(:last-child):hover{
+        padding: 1em 0;
+        background-color: #4e4d4d;
+    }
 }
 .home-page{
     h1{
@@ -219,13 +223,31 @@ td:nth-last-child(1){
         left:0;
         padding: 2% 10%;
     }
-   .fa-square-facebook{
-    top:8%;
-   }
-   .fa-square-instagram{
-    top:3%;
-    right:3%;
-   }
+  
    .fa-square-whatsapp{
     bottom:8%;   }
  }
+
+ @media only screen and (min-width:550px) and (max-width:950px){
+    .navigation{
+        width:90%;
+        margin:0 4%;
+        padding: 3.5% 0%;
+        top:90%;
+        a{
+            padding:10px 5px;
+        }
+
+    }
+    .kitisuru-main{
+        flex-direction: column;
+    }
+    .logo{
+        left:35%;
+     }
+     
+ 
+       .fa-square-whatsapp{
+        bottom:10%;   }
+
+}
