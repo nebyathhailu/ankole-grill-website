@@ -209,6 +209,9 @@ a{
         margin:0 7%;
         padding: 3.5% 0%;
         top:90%;
+        a{
+            padding:10px 5px;
+        }
     }
     .logo{
         left:35%;
@@ -222,10 +225,10 @@ a{
         width:90%;
      } 
      .kilimani-contact{
-        height: 30%;
+        padding-bottom: 10%;
     }
     .kitisuru-contact{
-        height:25%;
+        padding-bottom: 12%;
     } 
      .fa-square-facebook{
         top:7%;
