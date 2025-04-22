@@ -265,3 +265,19 @@ label,#time,#date{
   }
 
 }
+
+@media only screen and (min-width:950px) and (max-width:1300px){
+    .navigation{
+        width:60%;
+        margin:0 20%;
+        a{
+            padding:10px 8px;
+        }
+    }
+    .logo{
+        left:12%;
+    }
+    .fa-square-instagram{
+        right:6%;
+       }
+}

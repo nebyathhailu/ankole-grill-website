@@ -247,3 +247,25 @@ a{
     bottom:14%;   }
 
 }
+
+@media only screen and (min-width:950px) and (max-width:1300px){
+    .navigation{
+        width:110%;
+        margin:0;
+        a{
+            padding:10px 5px;
+        }
+    }
+    .logo{
+        left:40%;
+    }
+    .fa-square-instagram{
+        right:6%;
+       }
+    .live-artist{
+        img{
+            width:200px;
+            height:200px;
+        }
+    }
+}

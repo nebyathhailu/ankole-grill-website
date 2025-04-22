@@ -293,3 +293,34 @@ a{
         bottom:10%;   }
 
 }
+
+@media only screen and (min-width:950px) and (max-width:1300px){
+    .navigation{
+        width:60%;
+        margin:0 20%;
+        a{
+            padding:10px 8px;
+        }
+    }
+    .logo{
+        left:40%;
+    }
+    .fa-square-instagram{
+        right:6%;
+       }
+       .review{
+        margin-top: 23%;
+    }
+    .review-text{
+        padding:0;
+    }
+    .left-arrow{
+        left:10%;
+    }
+    .right-arrow{
+        right:10%;
+    }
+    .logo{
+        left:39%;
+     }
+}

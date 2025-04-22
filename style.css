@@ -228,5 +228,20 @@ li:nth-last-child(2):hover,li:nth-last-child(3):hover,li:nth-last-child(4):hover
        }
        .fa-square-whatsapp{
         bottom:10%;   }
+}
 
+@media only screen and (min-width:950px) and (max-width:1300px){
+    .navigation{
+        width:60%;
+        margin:0 20%;
+        a{
+            padding:10px 8px;
+        }
+    }
+    .logo{
+        left:40%;
+    }
+    .fa-square-instagram{
+        right:6%;
+       }
 }
