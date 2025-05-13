@@ -5,7 +5,7 @@ This is a multi-page information website for a restaurant. It includes pages for
 This website aims to provide all the necessary information customers might need about the restaurant including daily menus, upcoming events, live performances, and the ability to make reservations and see reviews.
 
 ## Project Context
-This project was created as part of an assignment for my Product Management class. The objective was to simulate a real-world product development cycle using Agile Sprints. Each feature and page was planned and executed in phases, following sprint planning, task tracking, and iterative improvements to better understand how product teams operate in a tech startup environment.
+This project is a replica of the Ankole grill's information website. The objective was to simulate a real-world product development cycle using Agile Sprints. Each feature and page was planned and executed in phases, following sprint planning, task tracking, and iterative improvements to better understand how product teams operate in a tech startup environment.
 
 ### Features
 - Attractive and responsive homepage
