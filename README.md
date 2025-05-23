@@ -2,8 +2,7 @@
 This is a multi-page information website for a restaurant. It includes pages for Home, Menu, Live Performance, Contact, Reservation, Reviews, and Events.
 
 ## Project Context
-This project is a replica of the Ankole grill's information website. The objective was to simulate a real-world product development cycle using Agile Sprints. Each feature and page was planned and executed in phases, following sprint planning, task tracking, and iterative improvements to better understand how product teams operate in a tech startup environment.
-
+This project is a replica of the Ankole grill's information website, developed to simulate a real-world product development cycle within an Agile framework. Each feature and page was planned and executed in phases, following sprint planning, task tracking, and iterative improvements.
 ### Features
 - Attractive and responsive homepage
 - Full menu with categories
@@ -37,7 +36,7 @@ To run this project
 - JavaScript
 
 ### Live Preview
-- https://github.com/nebyathhailu/ankole-grill-website
+- [Ankole Grill](https://nebyathhailu.github.io/ankole-grill-website/)
 
 ## Contributing
 Want to contribute?
